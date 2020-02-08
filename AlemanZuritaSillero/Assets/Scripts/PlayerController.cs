@@ -38,4 +38,12 @@ public class PlayerController : MonoBehaviour
     {
         currentState.CheckTransitions();
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        currentState.intoTrigger(collision);
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        currentState.outOfTrigger(collision);
+    }
 }

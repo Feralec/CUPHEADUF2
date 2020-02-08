@@ -49,7 +49,7 @@ public class JumpingState : CharacterStates
     {
         rb.velocity = new Vector2(h * player.pm.horizontalSpeed * limiter, rb.velocity.y);
     }
-    public override void OnTriggerEnter(Collider2D collision)
+    public override void intoTrigger(Collider2D collision)
     {
         if (collision.gameObject.tag == "WaterSurface")
             ows = OnWaterState.SURFACE;

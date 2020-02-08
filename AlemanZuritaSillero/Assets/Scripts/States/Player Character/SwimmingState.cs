@@ -22,12 +22,13 @@ public class SwimmingState : JumpingState
     public override void Execute()
     {
         base.Execute();
+        MonoBehaviour.print("uy que daño");
     }
     public override void FixedExecute()
     {
         base.FixedExecute();
 
-        switch (onWaterState)
+        switch (ows)
         {
             case OnWaterState.DEEP:
                 break;
@@ -37,13 +38,16 @@ public class SwimmingState : JumpingState
                 break;
         }
     }
-    public override void OnTriggerExit(Collider2D collision)
+    public override void outOfTrigger(Collider2D collision)
     {
         if (collision.gameObject.tag == "DeepWater")
             ows = OnWaterState.SURFACE;
+        if (collision.gameObject.tag == "WaterSurface" && ows == OnWaterState.SURFACE) //esto hace que, si sale del agua hacia arriba, pase a ser salto, y si no, sigue en el agua
+            ows = OnWaterState.NONE;
     }
     public override void CheckTransitions()
     {
-        base.CheckTransitions();
+        if (ows == OnWaterState.NONE)
+            player.ChangeState(new JumpingState(player));
     }
 }

@@ -15,6 +15,6 @@ public abstract class CharacterStates
 
     public virtual void OnStart() { } 
     public virtual void OnFinish() { }
-    public virtual void OnTriggerEnter(Collider2D collision) { }
-    public virtual void OnTriggerExit(Collider2D collision) { }
+    public virtual void intoTrigger(Collider2D collision) { }
+    public virtual void outOfTrigger(Collider2D collision) { }
 }
