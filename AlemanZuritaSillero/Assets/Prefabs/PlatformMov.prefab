@@ -68,7 +68,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1889444879
+  m_SortingLayerID: -38741351
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -3798220681702313235, guid: 655c620c20d38fc4cbffa6afe35fff7a,
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childTransform: {fileID: 1479221790813845621}
   transformB: {fileID: 1479221791524641375}
-  speed: 2
+  speed: 2.5
 --- !u!1 &1479221791524641372
 GameObject:
   m_ObjectHideFlags: 0

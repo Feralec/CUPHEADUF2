@@ -15,7 +15,7 @@ MonoBehaviour:
   description: Datos del personaje jugable
   horizontalSpeed: 5
   jumpImpulse: 7
-  jumpingHorizontalLimiter: 0.5
+  jumpingHorizontalLimiter: 0.7
   shootExitTime: 0.3
   downWardCastDistance: 1
   groundLayer:

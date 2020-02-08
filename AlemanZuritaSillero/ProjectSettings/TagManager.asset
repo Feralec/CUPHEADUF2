@@ -49,6 +49,9 @@ TagManager:
   - name: Signals
     uniqueID: 1230700839
     locked: 0
+  - name: Platforms
+    uniqueID: 4256225945
+    locked: 0
   - name: Player
     uniqueID: 2405522417
     locked: 0
