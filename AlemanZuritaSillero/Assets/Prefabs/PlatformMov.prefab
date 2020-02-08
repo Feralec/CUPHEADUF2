@@ -196,7 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   childTransform: {fileID: 1479221790813845621}
   transformB: {fileID: 1479221791524641375}
-  speed: 3
+  speed: 2
 --- !u!1 &1479221791524641372
 GameObject:
   m_ObjectHideFlags: 0
