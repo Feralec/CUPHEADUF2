@@ -5,4 +5,5 @@ using UnityEngine;
 public class ObjectModel : ScriptableObject
 {
     public string description;
+    public float horizontalSpeed;
 }
