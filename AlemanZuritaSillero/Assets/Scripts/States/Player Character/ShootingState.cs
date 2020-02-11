@@ -11,8 +11,15 @@ public class ShootingState : GroundedState
     }
     public override void OnStart()
     {
-        anim.SetBool("isShooting",true);
+        anim.SetBool("isShooting", true);
         exitTime = player.pm.shootExitTime;
+        if (spr.flipX) {
+            GameObject go = MonoBehaviour.Instantiate(player.pm.shot, player.shotLeft.position, Quaternion.identity);
+            go.GetComponent<SpriteRenderer>().flipX=true; //algo complicado pero funciona
+        }
+        else {
+            MonoBehaviour.Instantiate(player.pm.shot, player.shotRight.position, Quaternion.identity);
+        }
         base.OnStart();
     }
     public override void Execute()

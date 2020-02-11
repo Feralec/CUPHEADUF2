@@ -117,6 +117,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 11400000, guid: 60650e6483c87fd41a0943072da781c9, type: 2}
+  shotRight: {fileID: 5422841632734127127}
+  shotLeft: {fileID: 4806617499919640375}
 --- !u!50 &54205026219167554
 Rigidbody2D:
   serializedVersion: 4
