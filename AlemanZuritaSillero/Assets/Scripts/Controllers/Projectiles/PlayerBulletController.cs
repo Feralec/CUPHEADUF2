@@ -10,10 +10,9 @@ public class PlayerBulletController : GenericBulletController
         if (GetComponent<SpriteRenderer>().flipX)
             flipOrNot = -1;//así se mueve hacia la izquierda
         else
-            flipOrNot = 1; 
+            flipOrNot = 1;
         base.Start();
     }
-    //yo
     private void Update()
     {
 
@@ -24,5 +23,17 @@ public class PlayerBulletController : GenericBulletController
     private void FixedUpdate()
     {
         transform.position += new Vector3(Time.deltaTime * speed*flipOrNot, 0, 0);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag=="Enemy")
+        {
+            //lo que sea para hacer daño
+            //Destroy(collision.gameObject); //solo para ver que funciona, esto normalmente lo evito
+            //igual sería mejor hacerlo dentro del script del enemigo
+
+            Destroy(this.gameObject);
+        }
     }
 }

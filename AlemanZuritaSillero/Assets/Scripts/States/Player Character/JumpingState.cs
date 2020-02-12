@@ -36,6 +36,9 @@ public class JumpingState : CharacterStates
         RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down,player.pm.downWardCastDistance,player.pm.groundLayer);
         if (hit.collider!=null)
             player.ChangeState(new GroundedState(player));
+        RaycastHit2D hit2 = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance, player.pm.platformLayer);
+        if (hit2.collider != null)
+            player.ChangeState(new OnPlatformState(player));
         if (ows!=OnWaterState.NONE)
             player.ChangeState(new SwimmingState(player, ows));
     }

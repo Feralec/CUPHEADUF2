@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerModel : ObjectModel
 {
     public float jumpImpulse, jumpingHorizontalLimiter, shootExitTime, downWardCastDistance, health;
-    public LayerMask groundLayer;
+    public LayerMask groundLayer,platformLayer;
     public CharacterStates currentState;
     public GameObject shot;
 }

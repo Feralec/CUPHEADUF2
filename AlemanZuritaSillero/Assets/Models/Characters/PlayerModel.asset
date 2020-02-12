@@ -22,4 +22,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  platformLayer:
+    serializedVersion: 2
+    m_Bits: 512
   shot: {fileID: 1518035706894365903, guid: 19d7c9b2d699e4d498ac54c37e1666f3, type: 3}
