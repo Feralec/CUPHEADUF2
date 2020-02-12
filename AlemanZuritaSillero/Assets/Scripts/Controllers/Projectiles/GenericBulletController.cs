@@ -6,7 +6,8 @@ using UnityEngine;
 public class GenericBulletController : MonoBehaviour
 {
     public Bullet datamodel;
-    protected float speed, maxTime, dmg;
+    [HideInInspector] public float speed; //este lo hago público para modificarlo porque ESTA ES LA MEJOR FORMA DE HACERLO QUE TENGO AAAAAAAADSHFDSHFO
+    protected float maxTime, dmg;
 
     protected void Start()
     {
