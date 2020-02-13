@@ -33,12 +33,12 @@ public class JumpingState : CharacterStates
             player.ChangeState(new GroundedState(player));
             */
         //uso raycast en vez de rb.Cast para que pueda detectar el suelo
-        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down,player.pm.downWardCastDistance,player.pm.groundLayer);
-        if (hit.collider!=null)
+        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance, player.pm.groundLayer);
+        if (hit.collider != null)
             player.ChangeState(new GroundedState(player));
         RaycastHit2D hit2 = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance, player.pm.platformLayer);
         if (hit2.collider != null)
-            player.ChangeState(new OnPlatformState(player));
+            player.ChangeState(new OnPlatformState(player, hit2.collider.gameObject.transform));
         if (ows!=OnWaterState.NONE)
             player.ChangeState(new SwimmingState(player, ows));
     }
