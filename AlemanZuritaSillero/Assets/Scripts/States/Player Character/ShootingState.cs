@@ -8,6 +8,7 @@ public class ShootingState : GroundedState
     private float timeCount=0f;
     public ShootingState(PlayerController p) : base(p)
     {
+
     }
     public override void OnStart()
     {
@@ -35,5 +36,13 @@ public class ShootingState : GroundedState
     {
         anim.SetBool("isShooting", false);
         base.OnFinish();
+    }
+    public override void CheckTransitions()
+    {
+        RaycastHit2D[] hitResults = new RaycastHit2D[2];
+        if (rb.Cast(new Vector2(0, -1), hitResults, 0.1f) == 0)
+            player.ChangeState(new JumpingState(player));
+        if (shooting)
+            player.ChangeState(new ShootingState(player));
     }
 }
