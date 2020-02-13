@@ -18,7 +18,7 @@ TagManager:
   - 
   - Ground
   - Platform
-  - 
+  - Enemigo
   - 
   - 
   - 
@@ -61,4 +61,7 @@ TagManager:
     locked: 0
   - name: Interface
     uniqueID: 4253657147
+    locked: 0
+  - name: Enemy
+    uniqueID: 1479920409
     locked: 0

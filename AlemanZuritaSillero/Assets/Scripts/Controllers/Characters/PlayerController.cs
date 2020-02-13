@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     {
         currentState.FixedExecute();
     }
+
     public void ChangeState(CharacterStates newState)
     {
         if (newState != null)
