@@ -48,4 +48,9 @@ public class PlayerController : MonoBehaviour
     {
         currentState.outOfTrigger(collision);
     }
+
+    private void DeadByFall()
+    {
+        
+    }
 }
