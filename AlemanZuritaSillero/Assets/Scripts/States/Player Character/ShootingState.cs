@@ -39,10 +39,17 @@ public class ShootingState : GroundedState
     }
     public override void CheckTransitions()
     {
-        RaycastHit2D[] hitResults = new RaycastHit2D[2];
-        if (rb.Cast(new Vector2(0, -1), hitResults, 0.1f) == 0)
-            player.ChangeState(new JumpingState(player));
-        if (shooting)
-            player.ChangeState(new ShootingState(player));
+        if (health <= 0)
+            player.ChangeState(new DeathState(player));
+        else
+        {
+            RaycastHit2D[] hitResults = new RaycastHit2D[2];
+            if (rb.Cast(new Vector2(0, -1), hitResults, 0.1f) == 0)
+                player.ChangeState(new JumpingState(player));
+            if (shooting)
+                player.ChangeState(new ShootingState(player));
+        
+        }
+        
     }
 }

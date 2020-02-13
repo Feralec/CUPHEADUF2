@@ -47,7 +47,9 @@ public class SwimmingState : JumpingState
     }
     public override void CheckTransitions()
     {
-        if (ows == OnWaterState.NONE)
+        if (health <= 0)
+            player.ChangeState(new DeathState(player));
+        else if (ows == OnWaterState.NONE)
             player.ChangeState(new JumpingState(player));
     }
 }
