@@ -4,10 +4,9 @@ using UnityEngine;
 
 public abstract class CharacterStates
 {
-    protected PlayerController player;
-    public CharacterStates (PlayerController p)
+    
+    public CharacterStates ()
     {
-        player = p;
     }
     public abstract void Execute();
     public abstract void CheckTransitions();

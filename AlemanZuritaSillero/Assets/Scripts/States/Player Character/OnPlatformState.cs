@@ -23,4 +23,12 @@ public class OnPlatformState : GroundedState
             player.transform.parent = null;
         base.OnFinish();
     }
+    public override void CheckTransitions()
+    {
+        base.CheckTransitions();
+    }
+    public override void Execute()
+    {
+        base.Execute();
+    }
 }

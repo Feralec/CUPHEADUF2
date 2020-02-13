@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using static SwimmingState;
 
-public class JumpingState : CharacterStates
+public class JumpingState : PlayerStates
 {
     protected float h, limiter;
     protected Rigidbody2D rb;
-    protected Animator anim;
     protected OnWaterState ows;
 
     public JumpingState(PlayerController p) : base(p)
     {
         rb = player.GetComponent<Rigidbody2D>();
-        anim = player.GetComponent<Animator>();
     }
     public override void OnStart()
     {
@@ -33,14 +31,19 @@ public class JumpingState : CharacterStates
             player.ChangeState(new GroundedState(player));
             */
         //uso raycast en vez de rb.Cast para que pueda detectar el suelo
-        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance, player.pm.groundLayer);
-        if (hit.collider != null)
-            player.ChangeState(new GroundedState(player));
-        RaycastHit2D hit2 = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance, player.pm.platformLayer);
-        if (hit2.collider != null)
-            player.ChangeState(new OnPlatformState(player, hit2.collider.gameObject.transform));
-        if (ows!=OnWaterState.NONE)
-            player.ChangeState(new SwimmingState(player, ows));
+        if (health <= 0)
+            player.ChangeState(new DeathState(player));
+        else {
+            RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance, player.pm.groundLayer);
+            if (hit.collider != null)
+                player.ChangeState(new GroundedState(player));
+            RaycastHit2D hit2 = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance, player.pm.platformLayer);
+            if (hit2.collider != null)
+                player.ChangeState(new OnPlatformState(player, hit2.collider.gameObject.transform));
+            if (ows != OnWaterState.NONE)
+                player.ChangeState(new SwimmingState(player, ows));
+            }
+        
     }
 
     public override void Execute()

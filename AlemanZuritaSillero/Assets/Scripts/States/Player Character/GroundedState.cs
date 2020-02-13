@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundedState : CharacterStates
+public class GroundedState : PlayerStates
 {
     protected float h; //los hago protected por si el shooting state lo hereda, si es que hago shooting state
     protected Rigidbody2D rb; 
-    protected Animator anim;
     protected SpriteRenderer spr;
     protected bool shooting;
     protected LayerMask myLayer;
@@ -14,7 +13,6 @@ public class GroundedState : CharacterStates
     public GroundedState(PlayerController p) : base(p)
     {
         rb = player.GetComponent<Rigidbody2D>();
-        anim = player.GetComponent<Animator>();
         spr = player.GetComponent<SpriteRenderer>();
         myLayer = player.pm.groundLayer;
     }
@@ -31,14 +29,21 @@ public class GroundedState : CharacterStates
 
     public override void CheckTransitions()
     {
-       /* RaycastHit2D[] hitResults = new RaycastHit2D[2];
-        if (rb.Cast(new Vector2(0, -1), hitResults, 0.1f) == 0)
-            player.ChangeState(new JumpingState(player));*/ 
-        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance,myLayer);
-        if (hit.collider == null)
-            player.ChangeState(new JumpingState(player));
-        if (shooting)
-            player.ChangeState(new ShootingState(player));
+        /* RaycastHit2D[] hitResults = new RaycastHit2D[2];
+         if (rb.Cast(new Vector2(0, -1), hitResults, 0.1f) == 0)
+             player.ChangeState(new JumpingState(player));*/
+        if (health <= 0)
+            player.ChangeState(new DeathState(player));
+        else
+        {
+            RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance,myLayer);
+            if (hit.collider == null)
+                player.ChangeState(new JumpingState(player));
+            if (shooting)
+                player.ChangeState(new ShootingState(player));
+        }
+        
+        
     }
 
     public override void Execute()
@@ -57,6 +62,7 @@ public class GroundedState : CharacterStates
             spr.flipX = true;
         else if (h > 0)
             spr.flipX = false;
+
     }
     public void IDontWantShootToInheritThis()
     {
