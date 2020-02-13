@@ -8,17 +8,21 @@ public class GroundedState : CharacterStates
     protected Rigidbody2D rb; 
     protected Animator anim;
     protected SpriteRenderer spr;
+    protected bool shooting;
+    protected LayerMask myLayer;
 
     public GroundedState(PlayerController p) : base(p)
     {
         rb = player.GetComponent<Rigidbody2D>();
         anim = player.GetComponent<Animator>();
         spr = player.GetComponent<SpriteRenderer>();
+        myLayer = player.pm.groundLayer;
     }
 
     public override void OnStart()
     {
         anim.SetBool("isJumping", false);
+        shooting = false;
     }
     public override void OnFinish()
     {
@@ -30,9 +34,11 @@ public class GroundedState : CharacterStates
        /* RaycastHit2D[] hitResults = new RaycastHit2D[2];
         if (rb.Cast(new Vector2(0, -1), hitResults, 0.1f) == 0)
             player.ChangeState(new JumpingState(player));*/ 
-        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance,player.pm.groundLayer);
+        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance,myLayer);
         if (hit.collider == null)
             player.ChangeState(new JumpingState(player));
+        if (shooting)
+            player.ChangeState(new ShootingState(player));
     }
 
     public override void Execute()
@@ -56,7 +62,7 @@ public class GroundedState : CharacterStates
     {
         if (Input.GetAxis("Fire1") > 0)
         {
-            player.ChangeState(new ShootingState(player));
+            shooting = true;
         }
     }
 
