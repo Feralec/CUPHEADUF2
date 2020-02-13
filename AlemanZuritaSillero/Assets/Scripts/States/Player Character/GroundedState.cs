@@ -27,13 +27,12 @@ public class GroundedState : CharacterStates
 
     public override void CheckTransitions()
     {
-        RaycastHit2D[] hitResults = new RaycastHit2D[2];
+       /* RaycastHit2D[] hitResults = new RaycastHit2D[2];
         if (rb.Cast(new Vector2(0, -1), hitResults, 0.1f) == 0)
-            player.ChangeState(new JumpingState(player)); //puedo dejarlo así, y así no tengo que hacer un cast diferente en OnPlatformState
-        //pero, si veis que da problemas, usad el código de abajo, y el mismo para OnPlatformState pero con platformLayer en vez de groundLayer
-        /*RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance,player.pm.groundLayer);
+            player.ChangeState(new JumpingState(player));*/ 
+        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance,player.pm.groundLayer);
         if (hit.collider == null)
-            player.ChangeState(new JumpingState(player));*/
+            player.ChangeState(new JumpingState(player));
     }
 
     public override void Execute()
