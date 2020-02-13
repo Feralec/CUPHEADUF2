@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - WaterSurface
+  - DeepWater
+  - Enemy
+  - Bullet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Platform
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2778092527
+    locked: 0
+  - name: Signals
+    uniqueID: 1230700839
+    locked: 0
+  - name: Platforms
+    uniqueID: 4256225945
+    locked: 0
+  - name: Player
+    uniqueID: 2405522417
+    locked: 0
+  - name: Water
+    uniqueID: 1840125131
+    locked: 0
+  - name: Interface
+    uniqueID: 4253657147
+    locked: 0
