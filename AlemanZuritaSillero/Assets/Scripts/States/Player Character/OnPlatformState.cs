@@ -15,6 +15,14 @@ public class OnPlatformState : GroundedState
         player.transform.parent = parentPlatform;
         base.OnStart();
     }
+
+    public override void CheckTransitions()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance, player.pm.platformLayer);
+        if (hit.collider == null)
+            player.ChangeState(new JumpingState(player));
+    }
+    
     public override void OnFinish()
     {
         player.transform.parent = null;
