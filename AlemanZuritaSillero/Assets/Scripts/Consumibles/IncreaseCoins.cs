@@ -18,5 +18,7 @@ public class IncreaseCoins : MonoBehaviour
     void Update()
     {
         text.text = numbersOfCoins.ToString();
+
+       
     }
 }

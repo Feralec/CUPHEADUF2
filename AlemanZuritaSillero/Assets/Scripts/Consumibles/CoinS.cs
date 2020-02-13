@@ -11,6 +11,7 @@ public class CoinS : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            GameManager.GInstance.coins += 1;
             Instantiate(coinSound);
             IncreaseCoins.numbersOfCoins += 1;
             Destroy(gameObject);
