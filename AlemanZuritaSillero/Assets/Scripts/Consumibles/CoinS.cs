@@ -9,8 +9,11 @@ public class CoinS : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(coinSound);
-        IncreaseCoins.numbersOfCoins += 1;
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Instantiate(coinSound);
+            IncreaseCoins.numbersOfCoins += 1;
+            Destroy(gameObject);
+        }
     }
 }
