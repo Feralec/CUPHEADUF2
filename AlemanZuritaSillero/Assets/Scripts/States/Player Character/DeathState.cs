@@ -18,7 +18,7 @@ public class DeathState : PlayerStates
 
     public override void Execute()
     {
-        MonoBehaviour.print(health);
+        MonoBehaviour.print(gm.playerHealth);
     }
 
     public override void FixedExecute()

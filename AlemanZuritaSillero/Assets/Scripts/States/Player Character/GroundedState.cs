@@ -32,7 +32,7 @@ public class GroundedState : PlayerStates
         /* RaycastHit2D[] hitResults = new RaycastHit2D[2];
          if (rb.Cast(new Vector2(0, -1), hitResults, 0.1f) == 0)
              player.ChangeState(new JumpingState(player));*/
-        if (health <= 0)
+        if (gm.playerHealth <= 0)
             player.ChangeState(new DeathState(player));
         else
         {
@@ -62,6 +62,7 @@ public class GroundedState : PlayerStates
             spr.flipX = true;
         else if (h > 0)
             spr.flipX = false;
+
 
     }
     public void IDontWantShootToInheritThis()

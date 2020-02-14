@@ -685,7 +685,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ade1976102d6848b788cbf16c81cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heatlhBar: {fileID: 54456090}
 --- !u!1001 &70436952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30233,7 +30232,7 @@ GameObject:
   - component: {fileID: 1155208121}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

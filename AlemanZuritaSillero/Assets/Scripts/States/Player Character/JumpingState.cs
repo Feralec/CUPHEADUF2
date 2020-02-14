@@ -31,7 +31,7 @@ public class JumpingState : PlayerStates
             player.ChangeState(new GroundedState(player));
             */
         //uso raycast en vez de rb.Cast para que pueda detectar el suelo
-        if (health <= 0)
+        if (gm.playerHealth <= 0)
             player.ChangeState(new DeathState(player));
         else {
             RaycastHit2D hit = Physics2D.Raycast(rb.position, Vector2.down, player.pm.downWardCastDistance, player.pm.groundLayer);
