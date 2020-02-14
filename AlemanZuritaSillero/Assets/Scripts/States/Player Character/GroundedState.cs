@@ -32,7 +32,11 @@ public class GroundedState : PlayerStates
         /* RaycastHit2D[] hitResults = new RaycastHit2D[2];
          if (rb.Cast(new Vector2(0, -1), hitResults, 0.1f) == 0)
              player.ChangeState(new JumpingState(player));*/
+<<<<<<< HEAD
         if (gm.playerHealth <= 0)
+=======
+        if (GameManager.GInstance.playerHealth <= 0)
+>>>>>>> 69fa89ba308ff0098fc247a323b999802c6df5f7
             player.ChangeState(new DeathState(player));
         else
         {
