@@ -62,5 +62,10 @@ public class CursedEmojiController : Enemy
             GameManager.GInstance.playerHealth -= 100;
             Destroy(gameObject);
         }
+
+        if(collision.gameObject.tag == "Bullet")
+        {
+            //me muero
+        }
     }
 }
