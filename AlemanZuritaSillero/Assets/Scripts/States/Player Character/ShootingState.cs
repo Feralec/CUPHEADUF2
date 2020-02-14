@@ -39,7 +39,7 @@ public class ShootingState : GroundedState
     }
     public override void CheckTransitions()
     {
-        if (gm.playerHealth <= 0)
+        if (GameManager.GInstance.playerHealth <= 0)
             player.ChangeState(new DeathState(player));
         else
         {

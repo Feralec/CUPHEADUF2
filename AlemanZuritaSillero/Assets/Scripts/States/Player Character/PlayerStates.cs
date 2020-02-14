@@ -12,7 +12,6 @@ public class PlayerStates : CharacterStates
     {
         player = p;
         anim = player.GetComponent<Animator>();
-        gm = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
 
     public override void CheckTransitions()
