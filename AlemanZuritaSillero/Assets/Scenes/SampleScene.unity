@@ -689,7 +689,6 @@ GameObject:
   - component: {fileID: 54456091}
   - component: {fileID: 54456093}
   - component: {fileID: 54456092}
-  - component: {fileID: 54456094}
   m_Layer: 5
   m_Name: HealthBarBG
   m_TagString: Untagged
@@ -753,18 +752,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54456090}
   m_CullTransparentMesh: 0
---- !u!114 &54456094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54456090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78ade1976102d6848b788cbf16c81cda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &70047938
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,7 +948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -30036,7 +30023,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -6.4, y: -0.000091552734}
+  m_AnchoredPosition: {x: -6.399994, y: -0.000091552734}
   m_SizeDelta: {x: 12.8, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &992188953
@@ -33419,8 +33406,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2038325071}
   - component: {fileID: 2038325072}
+  - component: {fileID: 2038325073}
   m_Layer: 5
-  m_Name: HealthBarSlider
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33446,7 +33434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 246.44998, y: -76.69996}
+  m_AnchoredPosition: {x: 246.44998, y: -76.69995}
   m_SizeDelta: {x: 499.66, y: 207.1}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2038325072
@@ -33487,7 +33475,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 719590879}
   m_FillRect: {fileID: 89708213}
   m_HandleRect: {fileID: 0}
@@ -33495,12 +33483,24 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &2038325073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038325070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ade1976102d6848b788cbf16c81cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2060983302
 PrefabInstance:
   m_ObjectHideFlags: 0
