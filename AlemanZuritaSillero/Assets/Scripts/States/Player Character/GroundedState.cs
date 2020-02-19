@@ -63,6 +63,7 @@ public class GroundedState : PlayerStates
         else if (h > 0)
             spr.flipX = false;
 
+
     }
     public void IDontWantShootToInheritThis()
     {

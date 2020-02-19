@@ -1,47 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    //public GameObject heatlhBar;
-    //public static bool isHide = false;
-    //private PauseMenuS pause;
+    private float maxHealth,currentHealth;
+    private Slider sl;
 
-    //// Start is called before the first frame update
-    //void Start()
-    //{
-        
-    //}
+    private void Start()
+    {
+        maxHealth = GameManager.GInstance.playerHealth;
+        currentHealth = GameManager.GInstance.playerHealth; //los dos tienen que serlo
+        sl = GetComponent<Slider>();
+    }
 
-    
-    //void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Escape))
-    //    {
-    //        if (isHide)
-    //        {
-    //            Hide();
-    //        }
-    //        else
-    //        {
-    //            Show();
-    //        }
-    //    }
+    private void Update()
+    {
+        if (currentHealth!= GameManager.GInstance.playerHealth)
+        {
+            currentHealth = GameManager.GInstance.playerHealth;
+            sl.SetValueWithoutNotify(currentHealth / maxHealth);
+        }
+    }
 
-    //}
-
-    //public void Show()
-    //{
-    //    heatlhBar.SetActive(true);
-    //    Time.timeScale = 1f; //El uno regresa el tiempo a la normalidad
-    //    isHide = false;
-    //}
-
-    //private void Hide()
-    //{
-    //    heatlhBar.SetActive(true);
-    //    Time.timeScale = 0f;
-    //    isHide = true;
-    //}
 }

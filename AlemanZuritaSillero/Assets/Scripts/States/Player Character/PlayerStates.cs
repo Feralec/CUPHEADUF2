@@ -6,13 +6,12 @@ public class PlayerStates : CharacterStates
 {
     protected PlayerController player;
     protected Animator anim;
-    protected float health;
+    protected GameManager gm;
 
     public PlayerStates(PlayerController p)
     {
         player = p;
         anim = player.GetComponent<Animator>();
-        health = player.pm.health;
     }
 
     public override void CheckTransitions()
