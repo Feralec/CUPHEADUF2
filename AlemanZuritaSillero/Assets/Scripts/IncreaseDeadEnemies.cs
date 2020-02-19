@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IncreaseCoins : MonoBehaviour
+
+public class IncreaseDeadEnemies : MonoBehaviour
 {
     Text text;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         text = GetComponent<Text>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        text.text = GameManager.GInstance.coins.ToString();
+        text.text = GameManager.GInstance.killedEnemies.ToString();
     }
 }
