@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public int coins, playerHealth, killedEnemies;
     public const int maxHealth = 100;
 
+    private AudioManager audioManager;
+
     public static GameManager GInstance
     {
         get { return instance; }
@@ -23,6 +25,12 @@ public class GameManager : MonoBehaviour
     {
         killedEnemies = 0;
         playerHealth = maxHealth;
+
+        audioManager = AudioManager.instance;
+        if(audioManager == null)
+        {
+            Debug.Log("No audio manager found ");
+        }
     }
 
     public void MakeSingletone()
