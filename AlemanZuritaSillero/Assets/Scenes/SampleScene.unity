@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 1509217}
   - component: {fileID: 1509219}
   - component: {fileID: 1509218}
+  - component: {fileID: 1509220}
   m_Layer: 5
   m_Name: Enemies
   m_TagString: Untagged
@@ -188,8 +189,8 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 0
 --- !u!222 &1509219
@@ -200,6 +201,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509216}
   m_CullTransparentMesh: 0
+--- !u!114 &1509220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0249fe13e2574274cb77805bbe6a8d7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1872912
 GameObject:
   m_ObjectHideFlags: 0
@@ -30544,6 +30557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: 0
   playerHealth: 0
+  killedEnemies: 0
 --- !u!4 &1155208122
 Transform:
   m_ObjectHideFlags: 0

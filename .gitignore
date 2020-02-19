@@ -64,3 +64,6 @@ crashlytics-build.properties
 *.dwlt
 *.dwlt
 *.dwlt
+*.dwlt
+*.cs
+AlemanZuritaSillero/Library/assetDatabase3
