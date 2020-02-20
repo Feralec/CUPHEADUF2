@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
 
-    public int coins, playerHealth;
+    public int coins, playerHealth, killedEnemies;
     public const int maxHealth = 100;
 
     public static GameManager GInstance
@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        killedEnemies = 0;
         playerHealth = maxHealth;
     }
 

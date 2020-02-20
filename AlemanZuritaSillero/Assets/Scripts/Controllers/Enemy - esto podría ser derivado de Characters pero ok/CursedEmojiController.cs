@@ -6,7 +6,7 @@ public class CursedEmojiController : Enemy
 {
     [Range(0f, 10f)] public float speed = 2f;
     public float perceptionRadius = 3f;
-    public float damage=50f;
+    public int damage= 50;
 
     private Animator anim;
     private bool isAttacking;
@@ -59,13 +59,16 @@ public class CursedEmojiController : Enemy
     {
         if (collision.gameObject.tag=="Player")
         {
-            GameManager.GInstance.playerHealth -= 100;
+            GameManager.GInstance.playerHealth -= damage;
             Destroy(gameObject);
         }
+    }
 
-        if(collision.gameObject.tag == "Bullet")
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
         {
-            //me muero
+            Destroy(gameObject);
         }
     }
 }

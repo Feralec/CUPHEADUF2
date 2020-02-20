@@ -1,0 +1,461 @@
+fileFormatVersion: 2
+guid: a7538f1f915fb6745a0ac23fa72b48e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1764516709375279351
+    second: cursedEmojiSprite_0
+  - first:
+      213: -8085741612479379696
+    second: cursedEmojiSprite_1
+  - first:
+      213: 8916606516945843154
+    second: cursedEmojiSprite_2
+  - first:
+      213: 3995626181644500487
+    second: cursedEmojiSprite_3
+  - first:
+      213: -3727800852642570620
+    second: cursedEmojiSprite_4
+  - first:
+      213: 569124620768064094
+    second: cursedEmojiSprite_5
+  - first:
+      213: -2003986340657957187
+    second: cursedEmojiSprite_6
+  - first:
+      213: -6726207157135578159
+    second: cursedEmojiSprite_7
+  - first:
+      213: -4038467796335327000
+    second: cursedEmojiSprite_8
+  - first:
+      213: 214983211277764172
+    second: cursedEmojiSprite_9
+  - first:
+      213: 6206236870269400977
+    second: cursedEmojiSprite_10
+  - first:
+      213: -5661549037620696117
+    second: cursedEmojiSprite_11
+  - first:
+      213: 8858406376375237513
+    second: cursedEmojiSprite_12
+  - first:
+      213: 6105899305421099208
+    second: cursedEmojiSprite_13
+  - first:
+      213: -5378027375796494631
+    second: cursedEmojiSprite_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cursedEmojiSprite_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 270
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7bab987331040449c6cee009d39949
+      internalID: 1764516709375279351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 270
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b891b5753227f544bd4996d97575755
+      internalID: -8085741612479379696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_2
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 273
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f03ffd1148b054e91fc5a7076768cb
+      internalID: 8916606516945843154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_3
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 207
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6451024aa7adfa48a50874ee28d6924
+      internalID: 3995626181644500487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_4
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 207
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c88e7fce002992448c5d4dbc149980b
+      internalID: -3727800852642570620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 210
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171beffbb6d24db4f8bb6fe6ced2b4d7
+      internalID: 569124620768064094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 148
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88830c965513cfd428a8b0f58978d5e5
+      internalID: -2003986340657957187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_7
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 148
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4032e9dbac26ae6458eece99c4997de8
+      internalID: -6726207157135578159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_8
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 151
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2959f28c8c1d30642bb7044f202979c9
+      internalID: -4038467796335327000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 73
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c643543a5b963094c8388a7be46c58a8
+      internalID: 214983211277764172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 73
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590826bc31aa0ed43a4afd81651ea8ab
+      internalID: 6206236870269400977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 76
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c1f2b5b2bc00443b4889749d32d2a8
+      internalID: -5661549037620696117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 16
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de00a13959696524b83023806ba55138
+      internalID: 8858406376375237513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 16
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc03c6d6b1089ca4493fe96555a14993
+      internalID: 6105899305421099208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cursedEmojiSprite_14
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 19
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbdc4637ec4df443b26a53b6a945984
+      internalID: -5378027375796494631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a2f5eb7436d13544abcb814bc035cee8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

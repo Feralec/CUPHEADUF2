@@ -1,0 +1,461 @@
+fileFormatVersion: 2
+guid: 10188bdbc5af1664e8b6b37c318e7b21
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4841466338535736574
+    second: GoosDeath_0
+  - first:
+      213: 4958730633126953422
+    second: GoosDeath_1
+  - first:
+      213: 6242805787291089890
+    second: GoosDeath_2
+  - first:
+      213: 1861386750644778356
+    second: GoosDeath_3
+  - first:
+      213: 4289708772906150617
+    second: GoosDeath_4
+  - first:
+      213: 8693486925561278932
+    second: GoosDeath_5
+  - first:
+      213: -4313315891334783881
+    second: GoosDeath_6
+  - first:
+      213: 3926651673016691523
+    second: GoosDeath_7
+  - first:
+      213: -2001724776733827089
+    second: GoosDeath_8
+  - first:
+      213: 1322942073404464546
+    second: GoosDeath_9
+  - first:
+      213: -3201899531810556926
+    second: GoosDeath_10
+  - first:
+      213: -4978589404188102456
+    second: GoosDeath_11
+  - first:
+      213: -3173058420873175901
+    second: GoosDeath_12
+  - first:
+      213: -1523969463371423914
+    second: GoosDeath_13
+  - first:
+      213: -5436764745926140725
+    second: GoosDeath_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GoosDeath_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34c09a44218d89439a49576ebbd3f1e
+      internalID: -4841466338535736574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_1
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 252
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d33525de02af54a9ff959d39f0c2b8
+      internalID: 4958730633126953422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_2
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 252
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85e4f18b8b6e594686cd88405fc0f32
+      internalID: 6242805787291089890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_3
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 252
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fdba43661f7e144a53ade82d972f34
+      internalID: 1861386750644778356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_4
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 252
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebe6378624bb824eb99a9e397199cc2
+      internalID: 4289708772906150617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741135bac59e8fd4cae3f43eefbbbfb0
+      internalID: 8693486925561278932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_6
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 126
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d9bb2fb1aaf4d4187cc04a91fcaaad
+      internalID: -4313315891334783881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_7
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 126
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a7adab213ddf644b33fc5a355683db
+      internalID: 3926651673016691523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_8
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 126
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d4fed4721362c4aa0ad0574b0c7663
+      internalID: -2001724776733827089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_9
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 126
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f65b346a899f042a52d22370a04010
+      internalID: 1322942073404464546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd6c88087a1957408154849cb6bfa84
+      internalID: -3201899531810556926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_11
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 0
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb01a26bcc22a149973cdf1372b7200
+      internalID: -4978589404188102456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_12
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 0
+        width: 188
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1da290857ef0441ab37870c7d917a5
+      internalID: -3173058420873175901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_13
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 0
+        width: 188
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e9a44faf6d98d43ae1ce2a0ae4c958
+      internalID: -1523969463371423914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoosDeath_14
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 0
+        width: 187.6
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0749523cb650a42aa228362e7948c0
+      internalID: -5436764745926140725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 697d51bd06071c24caa851c6cc2438cf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

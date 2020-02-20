@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class IncreaseCoins : MonoBehaviour
 {
     Text text;
-    public static int numbersOfCoins;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +16,6 @@ public class IncreaseCoins : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = numbersOfCoins.ToString();
-
-       
+        text.text = GameManager.GInstance.coins.ToString();
     }
 }

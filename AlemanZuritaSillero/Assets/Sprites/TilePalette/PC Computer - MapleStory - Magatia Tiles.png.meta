@@ -1,0 +1,577 @@
+fileFormatVersion: 2
+guid: c0b1a3e8ee53ab9419c81eeadf604557
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5645268173023182570
+    second: PC Computer - MapleStory - Magatia Tiles_0
+  - first:
+      213: 3078697147659570938
+    second: PC Computer - MapleStory - Magatia Tiles_1
+  - first:
+      213: -3519081755053047237
+    second: PC Computer - MapleStory - Magatia Tiles_2
+  - first:
+      213: 6655307381570216950
+    second: PC Computer - MapleStory - Magatia Tiles_3
+  - first:
+      213: 6588928409659099172
+    second: PC Computer - MapleStory - Magatia Tiles_4
+  - first:
+      213: -3702338363766237411
+    second: PC Computer - MapleStory - Magatia Tiles_5
+  - first:
+      213: 4717595998231054343
+    second: PC Computer - MapleStory - Magatia Tiles_6
+  - first:
+      213: -3067026543416751705
+    second: PC Computer - MapleStory - Magatia Tiles_7
+  - first:
+      213: 4716516872965696559
+    second: PC Computer - MapleStory - Magatia Tiles_8
+  - first:
+      213: -5710417479030317163
+    second: PC Computer - MapleStory - Magatia Tiles_9
+  - first:
+      213: -8883325420842562638
+    second: PC Computer - MapleStory - Magatia Tiles_10
+  - first:
+      213: 2009415690188110257
+    second: PC Computer - MapleStory - Magatia Tiles_11
+  - first:
+      213: -6903030203623518621
+    second: PC Computer - MapleStory - Magatia Tiles_12
+  - first:
+      213: -6579495439093662819
+    second: PC Computer - MapleStory - Magatia Tiles_13
+  - first:
+      213: 3918922751198876173
+    second: PC Computer - MapleStory - Magatia Tiles_14
+  - first:
+      213: -3848916040991321156
+    second: PC Computer - MapleStory - Magatia Tiles_15
+  - first:
+      213: 1086246137709243533
+    second: PC Computer - MapleStory - Magatia Tiles_16
+  - first:
+      213: 8921987761333877413
+    second: PC Computer - MapleStory - Magatia Tiles_17
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 136
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586c07e1f9111e043a24c50cae28ca96
+      internalID: 5645268173023182570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 136
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aba250aff4d70144b3ad8ef18912ff7
+      internalID: 3078697147659570938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_2
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 136
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1930cb321d7a2c44ac55d5112451901
+      internalID: -3519081755053047237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 136
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec65cbef354617046802ad373d873c27
+      internalID: 6655307381570216950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 102
+        width: 48
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb56849f776b1e458461ced06335b7f
+      internalID: 6588928409659099172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_5
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 102
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e94fc27e3825845b4fb4710c1186b9
+      internalID: -3702338363766237411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_6
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 102
+        width: 90
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9e6ffee7b0c214bb8ed3f7c1b98b0e
+      internalID: 4717595998231054343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_7
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 102
+        width: 90
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090b80fe75b757d459addcb19f08c72b
+      internalID: -3067026543416751705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_8
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 98
+        width: 90
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8461cb422384de349b1357ee6f3dc08b
+      internalID: 4716516872965696559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_9
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 99
+        width: 90
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa820947d037e4e428036f7f622df419
+      internalID: -5710417479030317163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_10
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 29
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c119106350bd34db0359ccdd988700
+      internalID: -8883325420842562638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_11
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 29
+        width: 24
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c78ca2d9dd34e449415a2af11b8ba5
+      internalID: 2009415690188110257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_12
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 29
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da79e49899b9f7641b49c824b9a53daa
+      internalID: -6903030203623518621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_13
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 29
+        width: 22
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac986d1ca891653449d5ae3385fef51f
+      internalID: -6579495439093662819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_14
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 6
+        width: 90
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613b68b8c9911ed45a433b973c869a76
+      internalID: 3918922751198876173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_15
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 6
+        width: 90
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd70c9fb73cdee4abd3c33e04038f4f
+      internalID: -3848916040991321156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_16
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 6
+        width: 90
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed028992699f7945802740adf94b6a8
+      internalID: 1086246137709243533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PC Computer - MapleStory - Magatia Tiles_17
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 6
+        width: 90
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8e06d13f3b7fd41b93de1b6037d663
+      internalID: 8921987761333877413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4630caa39f2fc92478380030c3894673
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

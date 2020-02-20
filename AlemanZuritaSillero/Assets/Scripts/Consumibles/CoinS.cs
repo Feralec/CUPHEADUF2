@@ -13,7 +13,6 @@ public class CoinS : MonoBehaviour
         {
             GameManager.GInstance.coins += 1;
             Instantiate(coinSound);
-            IncreaseCoins.numbersOfCoins += 1;
             Destroy(gameObject);
         }
     }

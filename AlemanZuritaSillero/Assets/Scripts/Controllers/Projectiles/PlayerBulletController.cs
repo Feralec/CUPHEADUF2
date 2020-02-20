@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerBulletController : GenericBulletController
 {
     private float flipOrNot;
+
     private void Start()
     {
         if (GetComponent<SpriteRenderer>().flipX)
@@ -29,10 +30,8 @@ public class PlayerBulletController : GenericBulletController
     {
         if (collision.tag=="Enemy")
         {
-            //lo que sea para hacer daño
-            //Destroy(collision.gameObject); //solo para ver que funciona, esto normalmente lo evito
-            //igual sería mejor hacerlo dentro del script del enemigo
-
+            GameManager.GInstance.killedEnemies++;
+            Debug.Log(GameManager.GInstance.killedEnemies);
             Destroy(this.gameObject);
         }
     }

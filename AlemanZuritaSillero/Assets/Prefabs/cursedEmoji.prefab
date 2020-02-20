@@ -136,7 +136,7 @@ MonoBehaviour:
   health: 100
   speed: 2
   perceptionRadius: 4.5
-  damage: 100
+  damage: 10
 --- !u!95 &4351040754143608124
 Animator:
   serializedVersion: 3
