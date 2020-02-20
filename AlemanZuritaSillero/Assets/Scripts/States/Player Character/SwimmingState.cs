@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SwimmingState : JumpingState
 {
+    public int waterDamage = 5;
     public OnWaterState onWaterState;
     public enum OnWaterState //pongo dos sub-estados del agua, para que pueda saltar si está en la superfície, pero sólo en esta
     {
@@ -22,7 +23,8 @@ public class SwimmingState : JumpingState
     public override void Execute()
     {
         base.Execute();
-        MonoBehaviour.print("uy que daño");
+
+        player.StartCoroutine(dmgTimeOnWater(2));
     }
     public override void FixedExecute()
     {
@@ -52,4 +54,12 @@ public class SwimmingState : JumpingState
         else if (ows == OnWaterState.NONE)
             player.ChangeState(new JumpingState(player));
     }
+
+    public IEnumerator dmgTimeOnWater(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+
+        GameManager.GInstance.playerHealth -= waterDamage;
+    }
 }
+
