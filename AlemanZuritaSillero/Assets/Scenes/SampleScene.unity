@@ -4095,7 +4095,6 @@ GameObject:
   - component: {fileID: 936565660}
   - component: {fileID: 936565662}
   - component: {fileID: 936565663}
-  - component: {fileID: 936565664}
   m_Layer: 4
   m_Name: Water
   m_TagString: DeepWater
@@ -7881,18 +7880,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 8}
   m_EdgeRadius: 0
---- !u!114 &936565664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 936565658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e995484e8ba2fd54cad01d8004456e01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &958553028
 GameObject:
   m_ObjectHideFlags: 0
@@ -33453,7 +33440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 246.44998, y: -76.69995}
+  m_AnchoredPosition: {x: 246.44922, y: -76.700195}
   m_SizeDelta: {x: 499.66, y: 207.1}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2038325072

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SwimmingState : JumpingState
 {
+    private bool coroutineIsOn;
+    public int damageOnWater = 10;
     public OnWaterState onWaterState;
     public enum OnWaterState //pongo dos sub-estados del agua, para que pueda saltar si está en la superfície, pero sólo en esta
     {
@@ -16,13 +18,24 @@ public class SwimmingState : JumpingState
 
     public override void OnStart()
     {
+        coroutineIsOn = false;
         anim.SetBool("isJumping", true);
         limiter = player.pm.jumpingHorizontalLimiter; //más que nada por si añado un limitador diferente para el agua
+    }
+    public override void OnFinish()
+    {
+        base.OnFinish();
+        player.StopAllCoroutines();
     }
     public override void Execute()
     {
         base.Execute();
-        MonoBehaviour.print("uy que daño");
+        if (!coroutineIsOn)
+        {
+            coroutineIsOn = true;
+            player.StartCoroutine(DamageOnWater());
+            
+        }
     }
     public override void FixedExecute()
     {
@@ -51,5 +64,15 @@ public class SwimmingState : JumpingState
             player.ChangeState(new DeathState(player));
         else if (ows == OnWaterState.NONE)
             player.ChangeState(new JumpingState(player));
+    }
+    
+    private IEnumerator DamageOnWater()
+    {
+        while (coroutineIsOn)
+        {
+            yield return new WaitForSeconds(1);
+
+            GameManager.GInstance.playerHealth -= damageOnWater;
+        }
     }
 }
