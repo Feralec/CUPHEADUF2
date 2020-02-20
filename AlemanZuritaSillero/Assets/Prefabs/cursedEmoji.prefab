@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d8bab13be73ef49a83ddacfc331017, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  datamodel: {fileID: 11400000, guid: a4dd6ea0b7ae00e44ad3155ff5e6e06d, type: 2}
   speed: 2
   perceptionRadius: 4.5
   damage: 10

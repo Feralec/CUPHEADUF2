@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CursedEmojiController : Enemy
+public class CursedEmojiController : EnemyController
 {
-    [Range(0f, 10f)] public float speed = 2f;
-    public float perceptionRadius = 3f;
-    public int damage= 50;
+    public CursedEmojiModel datamodel;
 
-    private Animator anim;
     private bool isAttacking;
-    private Rigidbody2D rb;
     private Transform playerTransform;
     private float sqrRadius;
 
@@ -20,7 +16,8 @@ public class CursedEmojiController : Enemy
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-        sqrRadius = perceptionRadius * perceptionRadius;
+        sqrRadius = datamodel.perceptionRadius * datamodel.perceptionRadius;
+        remainingHealth = datamodel.health;
     }
 
     // Update is called once per frame
@@ -36,13 +33,15 @@ public class CursedEmojiController : Enemy
             isAttacking=false;
         }
         anim.SetBool("isAttacking", isAttacking);
+        if (remainingHealth <= 0)
+            Destroy(gameObject);
     }
 
     void FixedUpdate()
     {
         if (isAttacking)
         {
-            transform.Translate(Vector3.down*Time.deltaTime*speed);
+            transform.Translate(Vector3.down*Time.deltaTime*datamodel.horizontalSpeed);
         } else { //hago esto para que no se vaya volando al dejar de moverse
             rb.velocity = Vector2.zero;
             rb.angularVelocity = 0f;
@@ -52,22 +51,14 @@ public class CursedEmojiController : Enemy
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.cyan;
-        Gizmos.DrawWireSphere(transform.position, perceptionRadius);
+        Gizmos.DrawWireSphere(transform.position, datamodel.perceptionRadius);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag=="Player")
         {
-            GameManager.GInstance.playerHealth -= damage;
-            Destroy(gameObject);
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Bullet")
-        {
+            GameManager.GInstance.playerHealth -= datamodel.damage;
             Destroy(gameObject);
         }
     }
