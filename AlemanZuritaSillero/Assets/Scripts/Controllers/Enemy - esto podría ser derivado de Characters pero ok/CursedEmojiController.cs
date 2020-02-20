@@ -6,7 +6,11 @@ public class CursedEmojiController : Enemy
 {
     [Range(0f, 10f)] public float speed = 2f;
     public float perceptionRadius = 3f;
+<<<<<<< HEAD
     public int damage = 15;
+=======
+    public int damage= 50;
+>>>>>>> 647038679eb29794facbfd3fdd776379cbfc7139
 
     private Animator anim;
     private bool isAttacking;
