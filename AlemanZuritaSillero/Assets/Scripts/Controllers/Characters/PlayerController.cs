@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     {
         currentState.Execute();
         PlayerDead();
+        if(transform.position.y <= -7)
+            SceneManager.LoadScene("DeadScene");
     }
     private void FixedUpdate()
     {
