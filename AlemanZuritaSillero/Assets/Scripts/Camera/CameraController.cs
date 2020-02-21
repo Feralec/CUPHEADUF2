@@ -19,4 +19,13 @@ public class CameraController : MonoBehaviour
     {
         transform.position = Vector3.Lerp(transform.position, new Vector3(target.position.x, target.position.y + 1.5f, transform.position.z), smoothed);
     }
+
+    private void KillPlayer()
+    {
+        if(target.position.y < -11)
+        {
+            GameManager.GInstance.playerHealth -= 100;
+
+        }
+    }
 }
