@@ -9,7 +9,7 @@ public class DeadMenu : MonoBehaviour
 
     public void PlayAgain()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("SampleScene");
 
     }
 

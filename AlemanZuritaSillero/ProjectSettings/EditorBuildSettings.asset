@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossLevel.unity
     guid: abf76680459c9684f9047b2e84880ff6
+  - enabled: 1
+    path: Assets/Scenes/DeadScene.unity
+    guid: 009de346f43e61b49a219eff8d7c0ba1
   m_configObjects: {}
