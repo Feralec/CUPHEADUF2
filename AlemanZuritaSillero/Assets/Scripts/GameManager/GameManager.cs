@@ -37,4 +37,11 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+
+    public void RestoreValues()
+    {
+        playerHealth = maxHealth;
+        killedEnemies = 0;
+        coins = 0;
+    }
 }
