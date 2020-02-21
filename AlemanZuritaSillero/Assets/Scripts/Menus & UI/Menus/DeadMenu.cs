@@ -9,8 +9,8 @@ public class DeadMenu : MonoBehaviour
 
     public void PlayAgain()
     {
+        GameManager.GInstance.RestoreValues();
         SceneManager.LoadScene("SampleScene");
-
     }
 
     public void Quit()

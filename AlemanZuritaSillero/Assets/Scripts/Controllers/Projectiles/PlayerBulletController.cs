@@ -30,7 +30,7 @@ public class PlayerBulletController : GenericBulletController
     {
         if (collision.tag=="Enemy")
         {
-            collision.gameObject.GetComponent<CursedEmojiController>().remainingHealth -= datamodel.damage;
+            collision.gameObject.GetComponent<EnemyController>().remainingHealth -= datamodel.damage;
             GameManager.GInstance.killedEnemies++;
             Debug.Log(GameManager.GInstance.killedEnemies);
             Destroy(this.gameObject);
