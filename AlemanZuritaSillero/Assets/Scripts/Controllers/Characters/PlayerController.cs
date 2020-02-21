@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         currentState.Execute();
+        PlayerDead();
     }
     private void FixedUpdate()
     {
@@ -49,8 +51,11 @@ public class PlayerController : MonoBehaviour
         currentState.outOfTrigger(collision);
     }
 
-    private void DeadByFall()
+    private void PlayerDead()
     {
-        
+        if(GameManager.GInstance.playerHealth <= 0)
+        {
+            SceneManager.LoadScene("DeadScene");
+        }
     }
 }
