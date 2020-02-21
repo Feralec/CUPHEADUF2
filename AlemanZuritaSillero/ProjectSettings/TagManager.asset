@@ -20,7 +20,7 @@ TagManager:
   - Ground
   - Platform
   - Enemy
-  - 
+  - Wind
   - 
   - 
   - 
@@ -65,4 +65,7 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 1933923943
+    locked: 0
+  - name: Wind
+    uniqueID: 3342740133
     locked: 0

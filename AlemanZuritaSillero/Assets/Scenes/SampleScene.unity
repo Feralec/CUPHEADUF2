@@ -31271,7 +31271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1349054168}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: WindEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31286,7 +31286,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349054167}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.2201, y: -2.3499165, z: -41.618492}
+  m_LocalPosition: {x: 84.2201, y: -2.3499165, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 221435933}
@@ -33899,6 +33899,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2124281318787253419, guid: e47ac2da2d7a5ea4a91a0daac9ec7326,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654984229853939139, guid: e47ac2da2d7a5ea4a91a0daac9ec7326,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1933923943
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654984229853939139, guid: e47ac2da2d7a5ea4a91a0daac9ec7326,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e47ac2da2d7a5ea4a91a0daac9ec7326, type: 3}
