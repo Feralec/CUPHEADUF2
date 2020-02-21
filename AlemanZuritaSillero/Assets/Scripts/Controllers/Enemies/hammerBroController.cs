@@ -5,4 +5,16 @@ using UnityEngine;
 public class hammerBroController : EnemyController
 {
     public hammerBroModel datamodel;
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        remainingHealth = datamodel.health;
+    }
+
+    void Update()
+    {
+        if (remainingHealth <= 0)
+            Destroy(gameObject);
+    }
 }
