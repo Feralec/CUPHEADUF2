@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "hammerBroModel", menuName = "Original/Enemies/Hammer Bro Model")]
 public class hammerBroModel : EnemyModel
 {
-
+    public float invincibilityTimeAfterBeingHurt,timeBetweenHammerThrows;
 }

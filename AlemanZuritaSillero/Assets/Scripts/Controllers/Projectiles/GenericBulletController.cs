@@ -5,16 +5,22 @@ using UnityEngine;
 //esta es una clase que controla TODOS LSO BULLETS, es decir, los que se usan DERIVAN DE ESTA, nunca se usa esta directamente
 public class GenericBulletController : MonoBehaviour
 {
-    public Bullet datamodel;
-    [HideInInspector] public float speed; //este lo hago público para modificarlo porque ESTA ES LA MEJOR FORMA DE HACERLO QUE TENGO AAAAAAAADSHFDSHFO
-    protected float maxTime, dmg;
+    public BulletModel datamodel;
+    [HideInInspector] public float hSpeed; //este lo hago público para modificarlo porque ESTA ES LA MEJOR FORMA DE HACERLO QUE TENGO AAAAAAAADSHFDSHFO
+
+    protected float maxTime, flipOrNot;
 
     protected void Start()
     {
-        speed = datamodel.horizontalSpeed;
+        hSpeed = datamodel.horizontalSpeed;
         maxTime = datamodel.maxTimeOnScreen;
-        dmg = datamodel.damage;
     }
+
+    protected void FixedUpdate()
+    {
+        transform.position += new Vector3(Time.deltaTime * hSpeed * flipOrNot, 0, 0);
+    }
+
     protected void Update()
     {
         Destroy(this.gameObject, maxTime);
