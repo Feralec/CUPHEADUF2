@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Bullet
   - Coin
+  - EnemyHammerBro
   layers:
   - Default
   - TransparentFX

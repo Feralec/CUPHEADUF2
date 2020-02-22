@@ -31,9 +31,13 @@ public class PlayerBulletController : GenericBulletController
         if (collision.tag=="Enemy")
         {
             collision.gameObject.GetComponent<EnemyController>().remainingHealth -= datamodel.damage;
-            GameManager.GInstance.killedEnemies++;
-            Debug.Log(GameManager.GInstance.killedEnemies);
             Destroy(this.gameObject);
         }
+
+        //if (collision.tag == "EnemyHammerBro")
+        //{
+        //    collision.gameObject.GetComponent<EnemyController>().remainingHealth -= datamodel.damage;
+        //    Destroy(this.gameObject);
+        //}
     }
 }

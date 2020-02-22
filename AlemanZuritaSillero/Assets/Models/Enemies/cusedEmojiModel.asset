@@ -15,5 +15,5 @@ MonoBehaviour:
   description: Datos del enemigo "cursed emoji"
   horizontalSpeed: 2
   health: 5
-  perceptionRadius: 4.5
-  damage: 10
+  perceptionRadius: 5
+  damage: 20

@@ -34,7 +34,10 @@ public class CursedEmojiController : EnemyController
         }
         anim.SetBool("isAttacking", isAttacking);
         if (remainingHealth <= 0)
+        {
+            GameManager.GInstance.killedEnemies++;
             Destroy(gameObject);
+        }
     }
 
     void FixedUpdate()

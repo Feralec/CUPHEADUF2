@@ -15,6 +15,9 @@ public class hammerBroController : EnemyController
     void Update()
     {
         if (remainingHealth <= 0)
+        {
+            GameManager.GInstance.killedEnemies++;
             Destroy(gameObject);
+        }
     }
 }

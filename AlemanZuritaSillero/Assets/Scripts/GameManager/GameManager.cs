@@ -43,5 +43,6 @@ public class GameManager : MonoBehaviour
         playerHealth = maxHealth;
         killedEnemies = 0;
         coins = 0;
+        totalNumberOfCoins = 0;
     }
 }
