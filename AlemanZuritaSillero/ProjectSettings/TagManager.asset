@@ -8,6 +8,7 @@ TagManager:
   - DeepWater
   - Enemy
   - Bullet
+  - Coin
   layers:
   - Default
   - TransparentFX

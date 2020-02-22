@@ -16,6 +16,6 @@ public class IncreaseCoins : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = GameManager.GInstance.coins.ToString();
+        text.text = (GameManager.GInstance.coins.ToString()+" / "+GameManager.GInstance.totalNumberOfCoins.ToString());
     }
 }
