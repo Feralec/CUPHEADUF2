@@ -662,6 +662,7 @@ GameObject:
   - component: {fileID: 566367808}
   - component: {fileID: 566367807}
   - component: {fileID: 566367806}
+  - component: {fileID: 566367809}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -734,6 +735,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &566367809
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566367805}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b29d43abcfaacbc4396716c04f97d3a3, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &811753991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,3 +1170,113 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312185980}
   m_CullTransparentMesh: 0
+--- !u!1 &1868833028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1868833031}
+  - component: {fileID: 1868833030}
+  - component: {fileID: 1868833029}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1868833029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868833028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d00a7479ae74d7498c759d336d9a415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: LaserShot
+    clip: {fileID: 8300000, guid: 6e9077dc446b24849b47bdc3cc8147b7, type: 3}
+    volume: 1
+    pitch: 1.5
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: Heal
+    clip: {fileID: 8300000, guid: 1be47301c6590374b9180af5c9c5b993, type: 3}
+    volume: 0.5
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: HitMarker
+    clip: {fileID: 8300000, guid: eef0f2740a5d81c45aa56130486740b0, type: 3}
+    volume: 1
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: KilledEnemy
+    clip: {fileID: 8300000, guid: e3bf1f457e7383d4980c36be95fd9ffd, type: 3}
+    volume: 1
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: Coin
+    clip: {fileID: 8300000, guid: b31fe23109fbc89449344e22621f8bd7, type: 3}
+    volume: 1
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: WaterSplash
+    clip: {fileID: 8300000, guid: 878d54f605c4dfa41974fbb88eb8a636, type: 3}
+    volume: 1
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: GameOver
+    clip: {fileID: 8300000, guid: 74c1533ddda287a4084b036db9775b2e, type: 3}
+    volume: 1
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: BackgroundMusic
+    clip: {fileID: 8300000, guid: a9f8936145b387e45863bd3a082ac723, type: 3}
+    volume: 1
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+--- !u!114 &1868833030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868833028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275195a09cbc6e048833e537c46fa7ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: 0
+  playerHealth: 0
+  killedEnemies: 0
+  totalNumberOfCoins: 0
+  spawnSoundName: 
+--- !u!4 &1868833031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868833028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

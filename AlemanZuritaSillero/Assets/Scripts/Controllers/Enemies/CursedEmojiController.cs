@@ -36,6 +36,7 @@ public class CursedEmojiController : EnemyController
         if (remainingHealth <= 0)
         {
             GameManager.GInstance.killedEnemies++;
+            AudioManager.instance.PlaySound("KilledEnemy");
             Destroy(gameObject);
         }
     }
@@ -62,6 +63,7 @@ public class CursedEmojiController : EnemyController
         if (collision.gameObject.tag=="Player")
         {
             GameManager.GInstance.playerHealth -= datamodel.damage;
+            AudioManager.instance.PlaySound("HitMarker");
             Destroy(gameObject);
         }
     }

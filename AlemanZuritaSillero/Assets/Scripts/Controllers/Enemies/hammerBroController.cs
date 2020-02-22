@@ -24,6 +24,7 @@ public class hammerBroController : EnemyController
         if (remainingHealth <= 0)
         {
             GameManager.GInstance.killedEnemies++;
+            AudioManager.instance.PlaySound("KilledEnemy");
             Destroy(gameObject);
         }
 

@@ -23,8 +23,12 @@ public class PlayerController : MonoBehaviour
         currentState.Execute();
         PlayerDead();
         if(transform.position.y <= -7)
+        {
             SceneManager.LoadScene("DeadScene");
+            AudioManager.instance.PlaySound("GameOver");
+        }           
     }
+
     private void FixedUpdate()
     {
         currentState.FixedExecute();
@@ -58,6 +62,7 @@ public class PlayerController : MonoBehaviour
         if(GameManager.GInstance.playerHealth <= 0)
         {
             SceneManager.LoadScene("DeadScene");
+            AudioManager.instance.PlaySound("GameOver");
         }
     }
 }

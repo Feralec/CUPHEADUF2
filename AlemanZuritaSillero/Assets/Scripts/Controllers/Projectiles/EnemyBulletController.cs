@@ -9,6 +9,7 @@ public class EnemyBulletController : GenericBulletController
         if (collision.gameObject.tag == "Player")
         {
             GameManager.GInstance.playerHealth -= datamodel.damage;
+            AudioManager.instance.PlaySound("HitMarker");
             Destroy(gameObject);
         }
     }
