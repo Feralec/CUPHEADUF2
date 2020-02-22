@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerBulletController : GenericBulletController
 {
-    private float flipOrNot;
 
     private void Start()
     {
@@ -14,17 +13,7 @@ public class PlayerBulletController : GenericBulletController
             flipOrNot = 1;
         base.Start();
     }
-    private void Update()
-    {
-
-        base.Update();
-
-        //print("prueba"); //ok funciona
-    }
-    private void FixedUpdate()
-    {
-        transform.position += new Vector3(Time.deltaTime * speed*flipOrNot, 0, 0);
-    }
+    
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -33,11 +22,5 @@ public class PlayerBulletController : GenericBulletController
             collision.gameObject.GetComponent<EnemyController>().remainingHealth -= datamodel.damage;
             Destroy(this.gameObject);
         }
-
-        //if (collision.tag == "EnemyHammerBro")
-        //{
-        //    collision.gameObject.GetComponent<EnemyController>().remainingHealth -= datamodel.damage;
-        //    Destroy(this.gameObject);
-        //}
     }
 }
