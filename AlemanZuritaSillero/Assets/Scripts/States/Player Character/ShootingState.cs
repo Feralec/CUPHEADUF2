@@ -13,6 +13,7 @@ public class ShootingState : GroundedState
     public override void OnStart()
     {
         anim.SetBool("isShooting", true);
+        AudioManager.instance.PlaySound("LaserShot");
         exitTime = player.pm.shootExitTime;
         if (spr.flipX) {
             GameObject go = MonoBehaviour.Instantiate(player.pm.shot, player.shotLeft.position, Quaternion.identity);

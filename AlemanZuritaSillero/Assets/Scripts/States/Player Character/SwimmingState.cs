@@ -19,6 +19,7 @@ public class SwimmingState : JumpingState
     public override void OnStart()
     {
         coroutineIsOn = false;
+        AudioManager.instance.PlaySound("WaterSplash");
         anim.SetBool("isJumping", true);
         limiter = player.pm.jumpingHorizontalLimiter; //más que nada por si añado un limitador diferente para el agua
     }
@@ -34,7 +35,6 @@ public class SwimmingState : JumpingState
         {
             coroutineIsOn = true;
             player.StartCoroutine(DamageOnWater());
-            
         }
     }
     public override void FixedExecute()
@@ -71,7 +71,7 @@ public class SwimmingState : JumpingState
         while (coroutineIsOn)
         {
             yield return new WaitForSeconds(1);
-
+            AudioManager.instance.PlaySound("HitMarker");
             GameManager.GInstance.playerHealth -= damageOnWater;
         }
     }

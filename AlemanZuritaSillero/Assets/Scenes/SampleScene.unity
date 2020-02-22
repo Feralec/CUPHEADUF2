@@ -2062,6 +2062,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monedas (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 8096809803599591471, guid: 466e9cd66bac57c4296ab13e7df80ce6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8096809803599591440, guid: 466e9cd66bac57c4296ab13e7df80ce6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2136,6 +2141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Monedas (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8096809803599591471, guid: 466e9cd66bac57c4296ab13e7df80ce6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8096809803599591440, guid: 466e9cd66bac57c4296ab13e7df80ce6,
         type: 3}
@@ -3584,6 +3594,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Monedas (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8096809803599591471, guid: 466e9cd66bac57c4296ab13e7df80ce6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8096809803599591440, guid: 466e9cd66bac57c4296ab13e7df80ce6,
         type: 3}
@@ -5146,6 +5161,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Monedas (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8096809803599591471, guid: 466e9cd66bac57c4296ab13e7df80ce6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8096809803599591440, guid: 466e9cd66bac57c4296ab13e7df80ce6,
         type: 3}
@@ -48559,6 +48579,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monedas (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 8096809803599591471, guid: 466e9cd66bac57c4296ab13e7df80ce6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8096809803599591440, guid: 466e9cd66bac57c4296ab13e7df80ce6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49262,10 +49287,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: LaserShot
+    clip: {fileID: 8300000, guid: 6e9077dc446b24849b47bdc3cc8147b7, type: 3}
+    volume: 1
+    pitch: 1.5
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: Heal
+    clip: {fileID: 8300000, guid: 1be47301c6590374b9180af5c9c5b993, type: 3}
+    volume: 0.5
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: HitMarker
+    clip: {fileID: 8300000, guid: eef0f2740a5d81c45aa56130486740b0, type: 3}
+    volume: 1
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: KilledEnemy
+    clip: {fileID: 8300000, guid: e3bf1f457e7383d4980c36be95fd9ffd, type: 3}
+    volume: 1
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: Coin
+    clip: {fileID: 8300000, guid: b31fe23109fbc89449344e22621f8bd7, type: 3}
+    volume: 1
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: WaterSplash
+    clip: {fileID: 8300000, guid: 878d54f605c4dfa41974fbb88eb8a636, type: 3}
+    volume: 1
+    pitch: 1
+    volumenVariation: 0
+    pitchVaration: 0
+  - name: BackgroundMusic
+    clip: {fileID: 8300000, guid: a9f8936145b387e45863bd3a082ac723, type: 3}
+    volume: 1
+    pitch: 1
     volumenVariation: 0
     pitchVaration: 0
 --- !u!1001 &1158571673

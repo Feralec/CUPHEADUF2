@@ -30,7 +30,6 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-
     public static AudioManager instance;
 
     [SerializeField] Sound[] sounds;
@@ -45,7 +44,6 @@ public class AudioManager : MonoBehaviour
         {
             instance = this;
         }
-        
     }
 
     private void Start()
@@ -56,8 +54,6 @@ public class AudioManager : MonoBehaviour
             go.transform.SetParent(this.transform);
             sounds[i].SetSource (go.AddComponent<AudioSource>());
         }
-
-        
     }
 
     public void PlaySound (string _name)
