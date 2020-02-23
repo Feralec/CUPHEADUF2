@@ -1243,12 +1243,6 @@ MonoBehaviour:
     pitch: 1
     volumenVariation: 0
     pitchVaration: 0
-  - name: BackgroundMusic
-    clip: {fileID: 8300000, guid: a9f8936145b387e45863bd3a082ac723, type: 3}
-    volume: 1
-    pitch: 1
-    volumenVariation: 0
-    pitchVaration: 0
 --- !u!114 &1868833030
 MonoBehaviour:
   m_ObjectHideFlags: 0

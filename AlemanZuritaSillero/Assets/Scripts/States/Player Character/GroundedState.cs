@@ -42,8 +42,6 @@ public class GroundedState : PlayerStates
             if (shooting)
                 player.ChangeState(new ShootingState(player));
         }
-        
-        
     }
 
     public override void Execute()
@@ -57,13 +55,10 @@ public class GroundedState : PlayerStates
         h = Input.GetAxis("Horizontal");
         anim.SetFloat("absSpeed", Mathf.Abs(h));
 
-
         if (h < 0)
             spr.flipX = true;
         else if (h > 0)
             spr.flipX = false;
-
-
     }
     public void IDontWantShootToInheritThis()
     {
@@ -80,6 +75,4 @@ public class GroundedState : PlayerStates
 
         rb.velocity = new Vector2(h * player.pm.horizontalSpeed, rb.velocity.y);
     }
-
-
 }
