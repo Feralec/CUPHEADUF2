@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BossFireBullet
   m_EditorClassIdentifier: 
   description: El disparo de fuego que hace el boss
-  horizontalSpeed: 9
+  horizontalSpeed: 12
   maxTimeOnScreen: 5
   damage: 30

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Modelo de datos para el jefe
   horizontalSpeed: 0
-  health: 50
-  timeBetweenFire: 4
+  health: 100
+  timeBetweenFire: 2
