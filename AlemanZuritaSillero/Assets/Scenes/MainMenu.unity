@@ -1260,6 +1260,7 @@ MonoBehaviour:
   killedEnemies: 0
   totalNumberOfCoins: 0
   spawnSoundName: 
+  isCanvasShowing: 0
 --- !u!4 &1868833031
 Transform:
   m_ObjectHideFlags: 0

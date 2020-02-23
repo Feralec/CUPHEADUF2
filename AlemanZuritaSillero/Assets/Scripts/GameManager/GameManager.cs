@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     public string spawnSoundName;
 
     private AudioManager audioManager;
-    private GameObject myCanvas;
 
     public static GameManager GInstance
     {
@@ -22,30 +21,17 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         MakeSingletone();
+        killedEnemies = 0;
+        playerHealth = maxHealth;
+        audioManager = AudioManager.instance;
     }
 
     private void Start()
     {
-        myCanvas = GameObject.FindGameObjectWithTag("Canvas");
-        killedEnemies = 0;
-        playerHealth = maxHealth;
-
-        audioManager = AudioManager.instance;
-        
         if(audioManager == null)
         {
             Debug.LogError("No audio manager found");
         }
-    }
-
-    public void quitCanvas()
-    {
-        myCanvas.SetActive(false);
-    }
-
-    public void showCanvas()
-    {
-        myCanvas.SetActive(true);
     }
 
     public void MakeSingletone()
