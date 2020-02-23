@@ -9,7 +9,7 @@ public class WinScript : MonoBehaviour
 
     public void PlayAgain()
     {
-        //GameManager.GInstance.RestoreValues();
+        GameManager.GInstance.RestoreValues();
         SceneManager.LoadScene("SampleScene");
     }
 

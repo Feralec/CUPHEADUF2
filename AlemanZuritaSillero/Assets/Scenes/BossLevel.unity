@@ -3968,7 +3968,7 @@ MonoBehaviour:
     volumenVariation: 0
     pitchVaration: 0
   - name: Coin
-    clip: {fileID: 8300000, guid: b31fe23109fbc89449344e22621f8bd7, type: 3}
+    clip: {fileID: 8300000, guid: 51ed88d5406ae034ea625bb852cbcaa6, type: 3}
     volume: 1
     pitch: 1
     volumenVariation: 0

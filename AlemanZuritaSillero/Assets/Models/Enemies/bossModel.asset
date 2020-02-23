@@ -15,4 +15,4 @@ MonoBehaviour:
   description: Modelo de datos para el jefe
   horizontalSpeed: 0
   health: 50
-  timeBetweenFire: 5
+  timeBetweenFire: 4
