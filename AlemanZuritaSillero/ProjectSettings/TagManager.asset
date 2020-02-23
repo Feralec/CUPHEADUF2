@@ -12,6 +12,7 @@ TagManager:
   - EnemyHammerBro
   - EnemyBullet
   - Boss
+  - Canvas
   layers:
   - Default
   - TransparentFX

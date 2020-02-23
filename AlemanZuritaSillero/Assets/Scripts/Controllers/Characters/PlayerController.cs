@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
         PlayerDead();
         if(transform.position.y <= -7)
         {
+            GameManager.GInstance.quitCanvas();
             SceneManager.LoadScene("DeadScene");
             AudioManager.instance.PlaySound("GameOver");
         }           
@@ -61,6 +62,7 @@ public class PlayerController : MonoBehaviour
     {
         if(GameManager.GInstance.playerHealth <= 0)
         {
+            GameManager.GInstance.quitCanvas();
             SceneManager.LoadScene("DeadScene");
             AudioManager.instance.PlaySound("GameOver");
         }

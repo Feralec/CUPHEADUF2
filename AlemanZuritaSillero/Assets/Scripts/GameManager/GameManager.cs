@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public string spawnSoundName;
 
     private AudioManager audioManager;
+    private GameObject myCanvas;
 
     public static GameManager GInstance
     {
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        myCanvas = GameObject.FindGameObjectWithTag("Canvas");
         killedEnemies = 0;
         playerHealth = maxHealth;
 
@@ -36,6 +38,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void quitCanvas()
+    {
+        myCanvas.SetActive(false);
+    }
+
+    public void showCanvas()
+    {
+        myCanvas.SetActive(true);
+    }
 
     public void MakeSingletone()
     {

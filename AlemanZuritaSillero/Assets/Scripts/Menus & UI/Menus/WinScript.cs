@@ -10,6 +10,7 @@ public class WinScript : MonoBehaviour
     public void PlayAgain()
     {
         GameManager.GInstance.RestoreValues();
+        GameManager.GInstance.showCanvas();
         SceneManager.LoadScene("SampleScene");
     }
 

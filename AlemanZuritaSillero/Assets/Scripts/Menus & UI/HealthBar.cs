@@ -23,5 +23,4 @@ public class HealthBar : MonoBehaviour
             sl.SetValueWithoutNotify(currentHealth / maxHealth);
         }
     }
-
 }

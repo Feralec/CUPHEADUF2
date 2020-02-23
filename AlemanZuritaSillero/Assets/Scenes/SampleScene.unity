@@ -3246,7 +3246,7 @@ GameObject:
   - component: {fileID: 504018278}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3326,8 +3326,8 @@ RectTransform:
   - {fileID: 1035048124}
   - {fileID: 1509217}
   - {fileID: 2038325071}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 941642322}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9286,7 +9286,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 504018277}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -50751,7 +50752,7 @@ Transform:
   - {fileID: 1253246136}
   - {fileID: 208621935}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1333534405
 PrefabInstance:
@@ -53291,10 +53292,10 @@ Transform:
   - {fileID: 1614063090}
   - {fileID: 1376500143}
   - {fileID: 768373353}
-  - {fileID: 393154983}
-  - {fileID: 1754748767}
   - {fileID: 1159761036}
+  - {fileID: 393154983}
   - {fileID: 1185868720}
+  - {fileID: 1754748767}
   - {fileID: 248834415}
   - {fileID: 1059737964}
   - {fileID: 655432042}
