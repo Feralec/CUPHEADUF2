@@ -7,7 +7,9 @@ public class BossController : EnemyController
 {
     public BossModel datamodel;
     public GameObject FireBall;
+    public GameObject Enemies;
     public Transform fireballSpawn;
+    public Transform enemies;
 
     private float i,flametimer;
 
@@ -44,5 +46,6 @@ public class BossController : EnemyController
     public void FlameBlast()
     {
         GameObject hadouken = Instantiate(FireBall,fireballSpawn.position, Quaternion.identity);
+        GameObject spawnLittleEnemies = Instantiate(Enemies, enemies.position, Quaternion.identity);
     }
 }
