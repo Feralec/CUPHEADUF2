@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/BossLevel.unity
+=======
+- path: Assets/Scenes/MainMenu.unity
+>>>>>>> 39cd87c81f4f8866c974318fa9a72c8251c738e1
   isLoaded: 1
   isActive: 1
   isSubScene: 0

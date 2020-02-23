@@ -40,7 +40,6 @@ public class BossController : EnemyController
     }
     public void theGameIsOver()
     {
-        GameManager.GInstance.quitCanvas();
         SceneManager.LoadScene("WinScene");
     }
     public void FlameBlast()
