@@ -13,8 +13,7 @@ public class CursedEmojiController : EnemyController
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        base.Start();
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         sqrRadius = datamodel.perceptionRadius * datamodel.perceptionRadius;
         remainingHealth = datamodel.health;

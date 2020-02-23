@@ -8,14 +8,14 @@ public class hammerBroController : EnemyController
     public GameObject hammer;
     public Transform hammerSpawn;
 
-    private float i;
+    private float i, waitingTime;
 
     void Start()
     {
-        anim = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        base.Start();
         remainingHealth = datamodel.health;
         i = 0;
+        waitingTime = datamodel.timeBetweenHammerThrows;
     }
 
     void Update()
@@ -30,7 +30,7 @@ public class hammerBroController : EnemyController
 
         //con esto hago un "loop" para que tire martillos cada cierto tiempo
         i += Time.deltaTime;
-        if (i>=datamodel.timeBetweenHammerThrows)
+        if (i>=waitingTime)
         {
             i = 0;
             anim.SetTrigger("throwingTrigger");

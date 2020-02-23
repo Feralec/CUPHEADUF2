@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: El disparo que hace un jugador
   horizontalSpeed: 7.5
-  maxTimeOnScreen: 10
+  maxTimeOnScreen: 5
   damage: 5

@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class EnemyBulletController : GenericBulletController
 {
+    protected void Start()
+    {
+        flipOrNot = -1;
+        base.Start();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")

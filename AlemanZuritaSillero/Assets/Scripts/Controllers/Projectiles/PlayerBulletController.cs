@@ -17,7 +17,7 @@ public class PlayerBulletController : GenericBulletController
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag=="Enemy")
+        if (collision.tag=="Enemy"||collision.tag=="Boss")
         {
             collision.gameObject.GetComponent<EnemyController>().remainingHealth -= datamodel.damage;
             Destroy(this.gameObject);

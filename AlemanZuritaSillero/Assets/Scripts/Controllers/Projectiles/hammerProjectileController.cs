@@ -12,7 +12,6 @@ public class hammerProjectileController : EnemyBulletController
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        flipOrNot = -1;
         rb.AddForce(hammerModel.verticalImpulse * Vector2.up, ForceMode2D.Impulse);
         base.Start();
     }

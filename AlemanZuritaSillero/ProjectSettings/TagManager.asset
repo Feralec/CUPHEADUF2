@@ -10,6 +10,8 @@ TagManager:
   - Bullet
   - Coin
   - EnemyHammerBro
+  - EnemyBullet
+  - Boss
   layers:
   - Default
   - TransparentFX
